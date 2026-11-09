@@ -84,3 +84,12 @@ Project: The Discount Paradox
 - Kunzel et al. (2019), Metalearners for Estimating Heterogeneous Treatment Effects Using Machine Learning.
 - Kennedy (2023), Towards Optimal Doubly Robust Estimation of Heterogeneous Causal Effects.
 - Athey and Wager (2021), Policy Learning With Observational Data.
+
+## Academic Reports
+
+The complete academic reports are available in two languages:
+
+- [English Academic Report](reports/The_Discount_Paradox_Academic_Report_EN.docx)
+- [Turkish Academic Report](reports/The_Discount_Paradox_Academic_Report_TR.docx)
+
+Both reports are provided in Microsoft Word format.

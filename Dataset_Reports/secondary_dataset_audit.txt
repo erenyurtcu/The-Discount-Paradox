@@ -1,0 +1,266 @@
+THE DISCOUNT PARADOX
+SECONDARY DATASET AUDIT
+=================================================================
+
+#################################################################
+HILLSTROM DATASET
+#################################################################
+
+FILE: Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv
+Size: 3.78 MB
+
+=================================================================
+DATASET: Hillstrom
+=================================================================
+Rows: 64,000
+Columns: 12
+Duplicate rows: 6,562
+
+COLUMN PROFILE
+         column   dtype  missing  missing_pct  unique
+        recency   int64        0          0.0      12
+history_segment  object        0          0.0       7
+        history float64        0          0.0   34833
+           mens   int64        0          0.0       2
+         womens   int64        0          0.0       2
+       zip_code  object        0          0.0       3
+         newbie   int64        0          0.0       2
+        channel  object        0          0.0       3
+        segment  object        0          0.0       3
+          visit   int64        0          0.0       2
+     conversion   int64        0          0.0       2
+          spend float64        0          0.0     429
+
+FIRST 3 ROWS
+ recency history_segment  history  mens  womens  zip_code  newbie channel       segment  visit  conversion  spend
+      10  2) $100 - $200   142.44     1       0 Surburban       0   Phone Womens E-Mail      0           0    0.0
+       6  3) $200 - $350   329.08     1       1     Rural       1     Web     No E-Mail      0           0    0.0
+       7  2) $100 - $200   180.65     0       1 Surburban       1     Web Womens E-Mail      0           0    0.0
+
+CAUSAL EXPERIMENT CHECK
+
+TREATMENT GROUPS
+segment
+Womens E-Mail    21387
+Mens E-Mail      21307
+No E-Mail        21306
+
+VARIABLE: visit
+count    64000.000000
+mean         0.146781
+std          0.353890
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%          0.000000
+max          1.000000
+
+VARIABLE: conversion
+count    64000.000000
+mean         0.009031
+std          0.094604
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%          0.000000
+max          1.000000
+
+VARIABLE: spend
+count    64000.000000
+mean         1.050908
+std         15.036448
+min          0.000000
+25%          0.000000
+50%          0.000000
+75%          0.000000
+max        499.000000
+
+VARIABLE: recency
+count    64000.000000
+mean         5.763734
+std          3.507592
+min          1.000000
+25%          2.000000
+50%          6.000000
+75%          9.000000
+max         12.000000
+
+VARIABLE: history
+count    64000.000000
+mean       242.085656
+std        256.158608
+min         29.990000
+25%         64.660000
+50%        158.110000
+75%        325.657500
+max       3345.930000
+
+VARIABLE: mens
+count    64000.000000
+mean         0.551031
+std          0.497393
+min          0.000000
+25%          0.000000
+50%          1.000000
+75%          1.000000
+max          1.000000
+
+VARIABLE: womens
+count    64000.000000
+mean         0.549719
+std          0.497526
+min          0.000000
+25%          0.000000
+50%          1.000000
+75%          1.000000
+max          1.000000
+
+VARIABLE: newbie
+count    64000.000000
+mean         0.502250
+std          0.499999
+min          0.000000
+25%          0.000000
+50%          1.000000
+75%          1.000000
+max          1.000000
+
+VARIABLE: channel
+channel
+Web             28217
+Phone           28021
+Multichannel     7762
+
+VARIABLE: zip_code
+zip_code
+Surburban    28776
+Urban        25661
+Rural         9563
+
+OUTCOMES BY EXPERIMENT GROUP
+               visit          conversion           spend         
+               count     mean      count     mean  count     mean
+segment                                                          
+Mens E-Mail    21307  0.18276      21307  0.01253  21307  1.42262
+No E-Mail      21306  0.10617      21306  0.00573  21306  0.65279
+Womens E-Mail  21387  0.15140      21387  0.00884  21387  1.07720
+
+HILLSTROM ANALYSIS COMPLETE
+
+#################################################################
+DUNNHUMBY DATASET
+#################################################################
+
+FILES
+dunnhumby_Breakfast-at-the-Frat.zip | 29.29 MB
+
+ZIP: dunnhumby_Breakfast-at-the-Frat.zip
+dunnhumby_Breakfast-at-the-Frat/dunnhumby - Breakfast at the Frat User Guide.pdf | 0.36 MB
+dunnhumby_Breakfast-at-the-Frat/dunnhumby - Breakfast at the Frat.xlsx | 30.17 MB
+
+EXCEL INSIDE ZIP: dunnhumby_Breakfast-at-the-Frat/dunnhumby - Breakfast at the Frat.xlsx
+
+SHEET: Glossary
+
+=================================================================
+DATASET: Dunnhumby / Glossary (first 1000)
+=================================================================
+Rows: 27
+Columns: 4
+Duplicate rows: 0
+
+COLUMN PROFILE
+                                       column   dtype  missing  missing_pct  unique
+                                   Unnamed: 0  object        1        3.704      26
+                                   Unnamed: 1  object        2        7.407       6
+                                   Unnamed: 2  object        2        7.407      25
+Breakfast at the Frat: A Time Series Analysis float64       27      100.000       0
+
+FIRST 3 ROWS
+                                                                                                                                                                                                                                                                                                                                          Unnamed: 0 Unnamed: 1  Unnamed: 2  Breakfast at the Frat: A Time Series Analysis
+The data contained in this file includes sales and promotional information from a sampling of stores over 156 weeks, beginning January 2009 through December 2011. These are the sales metrics of products in 4 categories: mouthwash, pretzels, frozen pizza, and boxed cereal, the top 5 products from each of the top 3 brands in each category.         NaN         NaN                                            NaN
+                                                                                                                                                                                                                                                                                                                                                 NaN        NaN         NaN                                            NaN
+                                                                                                                                                                                                                                                                                                                                       VARIABLE NAME      TABLE DESCRIPTION                                            NaN
+
+SHEET: dh Store Lookup
+
+=================================================================
+DATASET: Dunnhumby / dh Store Lookup (first 1000)
+=================================================================
+Rows: 80
+Columns: 9
+Duplicate rows: 0
+
+COLUMN PROFILE
+                                       column  dtype  missing  missing_pct  unique
+                                   Unnamed: 0 object        0          0.0      78
+                                   Unnamed: 1 object        0          0.0      74
+                                   Unnamed: 2 object        0          0.0      52
+Breakfast at the Frat: A Time Series Analysis object        0          0.0       5
+                                   Unnamed: 4 object        0          0.0      10
+                                   Unnamed: 5 object        0          0.0       4
+                                   Unnamed: 6 object       52         65.0      25
+                                   Unnamed: 7 object        0          0.0      74
+                                   Unnamed: 8 object        0          0.0      78
+
+FIRST 3 ROWS
+Unnamed: 0         Unnamed: 1        Unnamed: 2 Breakfast at the Frat: A Time Series Analysis Unnamed: 4     Unnamed: 5        Unnamed: 6          Unnamed: 7         Unnamed: 8
+  STORE_ID         STORE_NAME ADDRESS_CITY_NAME                       ADDRESS_STATE_PROV_CODE   MSA_CODE SEG_VALUE_NAME PARKING_SPACE_QTY SALES_AREA_SIZE_NUM AVG_WEEKLY_BASKETS
+       389         SILVERLAKE          ERLANGER                                            KY      17140     MAINSTREAM               408               46073       24766.807692
+      2277 ANDERSON TOWNE CTR        CINCINNATI                                            OH      17140        UPSCALE               NaN               81958       54052.519231
+
+SHEET: dh Products Lookup
+
+=================================================================
+DATASET: Dunnhumby / dh Products Lookup (first 1000)
+=================================================================
+Rows: 59
+Columns: 6
+Duplicate rows: 0
+
+COLUMN PROFILE
+                                       column  dtype  missing  missing_pct  unique
+                                   Unnamed: 0 object        0          0.0      59
+                                   Unnamed: 1 object        0          0.0      56
+                                   Unnamed: 2 object        0          0.0      18
+Breakfast at the Frat: A Time Series Analysis object        0          0.0       5
+                                   Unnamed: 4 object        0          0.0       8
+                                   Unnamed: 5 object        0          0.0      32
+
+FIRST 3 ROWS
+Unnamed: 0             Unnamed: 1    Unnamed: 2 Breakfast at the Frat: A Time Series Analysis   Unnamed: 4   Unnamed: 5
+       UPC            DESCRIPTION  MANUFACTURER                                      CATEGORY SUB_CATEGORY PRODUCT_SIZE
+1111009477 PL MINI TWIST PRETZELS PRIVATE LABEL                                    BAG SNACKS     PRETZELS        15 OZ
+1111009497      PL PRETZEL STICKS PRIVATE LABEL                                    BAG SNACKS     PRETZELS        15 OZ
+
+SHEET: dh Transaction Data
+
+=================================================================
+DATASET: Dunnhumby / dh Transaction Data (first 1000)
+=================================================================
+Rows: 1,000
+Columns: 12
+Duplicate rows: 0
+
+COLUMN PROFILE
+                                       column  dtype  missing  missing_pct  unique
+                                   Unnamed: 0 object        0          0.0       2
+                                   Unnamed: 1 object        0          0.0      26
+                                   Unnamed: 2 object        0          0.0      49
+Breakfast at the Frat: A Time Series Analysis object        0          0.0     103
+                                   Unnamed: 4 object        0          0.0      96
+                                   Unnamed: 5 object        0          0.0      90
+                                   Unnamed: 6 object        0          0.0     704
+                                   Unnamed: 7 object        0          0.0     204
+                                   Unnamed: 8 object        5          0.5     195
+                                   Unnamed: 9 object        0          0.0       3
+                                  Unnamed: 10 object        0          0.0       3
+                                  Unnamed: 11 object        0          0.0       3
+
+FIRST 3 ROWS
+         Unnamed: 0 Unnamed: 1 Unnamed: 2 Breakfast at the Frat: A Time Series Analysis Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11
+      WEEK_END_DATE  STORE_NUM        UPC                                         UNITS     VISITS        HHS      SPEND      PRICE BASE_PRICE    FEATURE     DISPLAY    TPR_ONLY
+2009-01-14 00:00:00        367 1111009477                                            13         13         13      18.07       1.39       1.57          0           0           1
+2009-01-14 00:00:00        367 1111009497                                            20         18         18       27.8       1.39       1.39          0           0           0
+
+DUNNHUMBY ANALYSIS COMPLETE

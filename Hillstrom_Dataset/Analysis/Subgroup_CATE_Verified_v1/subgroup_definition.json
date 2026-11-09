@@ -1,0 +1,23 @@
+{
+  "source": "DR_Verified_v1 with original Hillstrom rows reattached by verified split indices",
+  "recency_median_dev": 6.0,
+  "history_median_dev": 158.64999999999998,
+  "dimensions": [
+    "newbie_group",
+    "channel",
+    "zip_code",
+    "recency_group",
+    "history_group"
+  ],
+  "minimum_group_n": 100,
+  "minimum_arm_n": 30,
+  "confidence_intervals": "Normal-approximation Welch SE for randomized within-group treatment-control spend mean difference; unadjusted exploratory 95% CI",
+  "cautions": [
+    "Predicted CATE means are descriptive predictions, not causal effect validation or uncertainty intervals.",
+    "Randomized subgroup ATEs are independent experimental estimates within pre-treatment groups.",
+    "Exploratory multiple comparisons; no multiplicity adjustment.",
+    "Previously inspected test data are not a pristine confirmatory holdout.",
+    "Hillstrom treatment is Mens E-Mail vs No E-Mail, not a retail discount.",
+    "No model refitting or modification of verified artifacts."
+  ]
+}

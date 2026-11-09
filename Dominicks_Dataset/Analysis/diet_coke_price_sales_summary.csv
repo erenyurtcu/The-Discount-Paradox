@@ -1,0 +1,4 @@
+price_group,observations,avg_price_change_pct,avg_unit_sales_change,avg_current_units,avg_previous_units
+Price cut >= 5%,11296,-25.94,239.16,341.09,101.93
+Price increase >= 5%,11121,39.15,-235.94,90.21,326.16
+Price roughly stable,8988,-0.01,-5.15,126.14,131.3

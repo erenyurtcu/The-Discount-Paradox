@@ -1,0 +1,3 @@
+model,test_observations,rmse,mae
+Zero-change baseline,15701,0.37398358666210185,0.27524652759670326
+Price association model,15701,0.356071740421502,0.2678488824252021

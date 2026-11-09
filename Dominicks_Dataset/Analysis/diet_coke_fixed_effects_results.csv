@@ -1,0 +1,2 @@
+product,upc,observations,stores,weeks,price_coefficient,clustered_se,ci_lower,ci_upper,p_value,r_squared,outcome_transform,price_transform,causal_status
+DIET COKE 2 LT,4900000663,31943,93,389,-2.0432057392760377,0.14563898272250614,-2.3286529001572007,-1.7577585783948744,1.0323716696027781e-44,0.8837505686729864,log1p(move),log(price/qty),observational_association

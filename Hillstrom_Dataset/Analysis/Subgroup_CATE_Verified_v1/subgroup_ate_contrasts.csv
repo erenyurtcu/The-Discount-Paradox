@@ -1,0 +1,7 @@
+split,feature,group_a,group_b,difference_in_group_ate,se,ci95_low,ci95_high,ci_excludes_zero
+validation,newbie_group,Existing customer,New customer,-0.7922177394889868,0.5289963111428896,-1.8290505093290506,0.2446150303510769,False
+validation,recency_group,Higher recency,Lower recency,0.2673041725069284,0.5522484315019434,-0.8151027532368805,1.3497110982507374,False
+validation,history_group,Higher history,Lower history,1.0888987587302874,0.5218414929799632,0.06608943248955956,2.1117080849710153,True
+test,newbie_group,Existing customer,New customer,-0.6089601936404024,0.6820095278882952,-1.945698868301461,0.7277784810206561,False
+test,recency_group,Higher recency,Lower recency,0.6880059537825076,0.6913485016296971,-0.6670371094116987,2.043049016976714,False
+test,history_group,Higher history,Lower history,-0.4547842230064496,0.6839991624973384,-1.7954225815012328,0.8858541354883336,False

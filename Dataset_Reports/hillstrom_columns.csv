@@ -1,0 +1,13 @@
+column,dtype,missing,missing_pct,unique
+recency,int64,0,0.0,12
+history_segment,object,0,0.0,7
+history,float64,0,0.0,34833
+mens,int64,0,0.0,2
+womens,int64,0,0.0,2
+zip_code,object,0,0.0,3
+newbie,int64,0,0.0,2
+channel,object,0,0.0,3
+segment,object,0,0.0,3
+visit,int64,0,0.0,2
+conversion,int64,0,0.0,2
+spend,float64,0,0.0,429
